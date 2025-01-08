@@ -18,3 +18,14 @@ function showSectionByID(id){
     // show current clicked section
     document.getElementById(id).classList.remove('hidden');
 }
+
+
+function changeColorToLime(){
+    document.getElementById('show-donate-list').classList.add('bg-[#B4F461]');
+    document.getElementById('show-transaction-list').classList.remove('bg-[#B4F461]');
+}
+
+function changeColorToWhite(){
+    document.getElementById('show-donate-list').classList.remove('bg-[#B4F461]');
+    document.getElementById('show-transaction-list').classList.add('bg-[#B4F461]');
+}

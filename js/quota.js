@@ -20,7 +20,7 @@ document.getElementById('btn-quota').addEventListener('click', function (event) 
     }
     else {
         const addBalance = quotaBalance + amount;
-        const balance = mainBalance - addBalance;
+        const balance = mainBalance - amount;
 
         // set the input amount to Quota balance
         document.getElementById('quota-balance').innerText = addBalance;
@@ -34,6 +34,9 @@ document.getElementById('btn-quota').addEventListener('click', function (event) 
 
         // add to transaction history
         const div= document.createElement('div');
+        div.classList.add('grid');
+        div.classList.add('grid-cols-1');
+        div.classList.add('my-6');
         div.classList.add('border');
         div.classList.add('border-gray-200');
         div.classList.add('rounded-xl')
@@ -55,4 +58,4 @@ document.getElementById('btn-quota').addEventListener('click', function (event) 
 
 
 
-})
+});
