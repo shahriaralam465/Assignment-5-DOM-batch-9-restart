@@ -1,3 +1,10 @@
 .font{
         font-family: "Lexend", serif;      
 }
+
+.button{
+    background-color: #B4F461;
+}
+.button:hover{
+    background-color: #a8ff37;
+}
