@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Donate Bangladesh</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <!-- Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="font h-full">
+    <!-- header starts -->
+    <header
+        class="sticky top-0 grid grid-cols-1 gap-9 bg-[#fdd83520] px-2 py-3 lg:px-0 lg:py-0  md:px-6  backdrop-blur-lg border-b border-gray-400">
+        <div class="lg:w-[1140px] md:w-full w-full flex flex-row items-center justify-between my-0 mx-auto lg:py-5 ">
+            <!-- Blog Page link -->
+            <button id="btn-home"
+                class="btn btn-neutral lg:text-xl text-base font-semibold text-black lg:px-8 button border-none rounded-lg">Home</button>
+            <!-- Site logo -->
+            <div class="flex justify-center items-center gap-4">
+                <img src="./assets/logo.png" alt="" class="w-10">
+                <h3 class="lg:font-semibold font-bold lg:text-xl text-base text-black">Donate Bangladesh</h3>
+            </div>
+            <!-- Donate Amount -->
+            <div class="flex justify-center items-center lg:gap-4 gap-2">
+                <img src="./assets/coin.png" alt="">
+                <h3 id="main-balance" class="font-semibold text-xl text-gray-900">5500</h3>
+            </div>
+        </div>
+    </header>
+    <!-- header Ends -->
+
+    <!-- Main starts -->
+    <main class="lg:w-[1140px] md:w-full sm:w-full lg:py-8 md:py-6  px-2 my-0 mx-auto md:px-6 lg:mt-10">
+        <h1 class="text-center lg:font-bold lg: text-3xl">Important Questions And There Ans</h1>
+
+        <div class="card card-side bg-base-100 shadow-xl flex justify-center items-start">
+            <div class="card-body flex-1 ">
+                <div class="join join-vertical w-full">
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" checked="checked" />
+                        <div class="collapse-title text-xl font-bold">What is the Document Object Model (DOM) ?</div>
+                        <div class="collapse-content bg-slate-50">
+                            <p>The Document Object Model (DOM) is a programming interface for web documents. It
+                                represents the page so that programs can change the document structure, style, and
+                                content. The DOM represents the document as nodes and objects; that way, programming
+                                languages can interact with the page.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-bold">How to you select an element form The DOM</div>
+                        <div class="collapse-content bg-slate-50">
+
+                            <h5 class="text-lg font-semibold">Event delegation</h5>
+                            <ol>
+                                <li><b>Concept:</b> Instead of attaching event listeners directly to individual elements, you attach a single listener to a parent element.  </li>
+                            </ol>
+                            <ol>
+                                <li><b>Mechanism: </b>The listener checks the target property of the event to determine which child element was actually clicked/interacted with.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-bold">How to you select an element form The DOM</div>
+                        <div class="collapse-content bg-slate-50">
+                            <p>Event delegation in the DOM is a technique where you attach a single event listener to a
+                                parent element instead of attaching multiple listeners to each child element.
+
+                                This listener checks the target property of the event to determine which child element
+                                was actually clicked/interacted with.</p>
+                            <br>
+                            <h5 class="text-lg font-semibold">Benefits:</h5>
+                            <ol>
+                                <li><b>Improved Performance:</b> Reduces the number of event listeners, leading to better performance, especially with many dynamically added elements.
+                                </li>
+                            </ol>
+                            <ol>
+                                <li><b>Code Maintainability:</b>  Easier to add/remove event handlers for new elements.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="collapse collapse-arrow join-item border-base-300 border">
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-bold">how do you manipulate an element's attributes and styles using the DOM?</div>
+                        <div class="collapse-content bg-slate-50">
+                            <p>To manipulate an element's attributes and styles using the DOM, I can  use various javScript method and properties, Here's how i can do it:</p>
+                            <br>
+                            <ol>
+                                <li><b>Manipulating Attributes</b></li>
+                                <li><b>2. Manipulating Styles</b></li>                                
+                            </ol>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Main Ends -->
+    <footer class="grid grid-cols-1 place-items-center text-center bg-footer py-6 w-full ">
+        <h3 class="text-xl font-extrabold ">Donate Bangladesh</h3>
+        <div class="divider my-0 w-1/3"></div>
+        <p class="w-11/12  md:w-4/5 lg:w-2/4   text-gray-700 ">
+            Donate Bangladesh is a platform connecting compassionate individuals with impactful projects in Bangladesh.
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('btn-home').addEventListener('click', function(){
+            window.location.href="./index.html"
+        })
+    </script>
+</body>
+
+</html>

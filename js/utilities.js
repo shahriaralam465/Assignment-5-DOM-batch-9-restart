@@ -26,6 +26,6 @@ function changeColorToLime(){
 }
 
 function changeColorToWhite(){
-    document.getElementById('show-donate-list').classList.remove('bg-[#B4F461]');
+    document.getElementById('show-donate-list').classList.add('bg-[#B4F461]');
     document.getElementById('show-transaction-list').classList.add('bg-[#B4F461]');
 }

@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
+    <title>Home | Donate Bangladesh</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/coin.png" type="image/x-icon">
     <!-- Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,10 +22,10 @@
 
 <body class="font h-full">
     <!-- header starts -->
-    <header class="sticky top-0 bg-[#fdd83520] px-2 py-3 lg:py-6 md:px-6 backdrop-blur-md border-b border-gray-400">
-        <div class="lg:w-[1140px] md:w-full w-full flex flex-row items-center justify-between my-0 mx-auto ">
+    <header class="sticky top-0 grid grid-cols-1 gap-9 bg-[#fdd83520] px-2 py-3 lg:px-0 lg:py-0  md:px-6  backdrop-blur-lg border-b border-gray-400">
+        <div class="lg:w-[1140px] md:w-full w-full flex flex-row items-center justify-between my-0 mx-auto lg:py-5 ">
             <!-- Blog Page link -->
-            <button
+            <button id="btn-blog"
                 class="btn btn-neutral lg:text-xl text-base font-semibold text-black lg:px-8 button border-none rounded-lg">Blog</button>
             <!-- Site logo -->
             <div class="flex justify-center items-center gap-4">
@@ -36,13 +38,8 @@
                 <h3 id="main-balance" class="font-semibold text-xl text-gray-900">5500</h3>
             </div>
         </div>
-    </header>
-    <!-- header Ends -->
-
-    <!-- Main starts -->
-    <main class="lg:w-[1140px] md:w-full sm:w-full lg:py-8 md:py-6  px-2 my-0 mx-auto md:px-6">
         <!-- button container -->
-        <div class="flex flex-row justify-center items-center gap-4  p-5">
+        <div class="flex flex-row justify-center items-center gap-4  p-5 bg-[#ffffff88]">
             <!-- Donate -->
             <button id="show-donate-list"
                 class="btn btn-outline border-gray-400 hover:bg-[#B4F461] hover:border-[#B4F461] hover:text-black font-semibold text-xl px-8 rounded-lg">Donate</button>
@@ -52,7 +49,11 @@
                 class="btn btn-outline border-gray-400 hover:bg-[#B4F461] hover:border-[#B4F461] hover:text-black font-semibold text-xl px-8 rounded-lg">History</button>
 
         </div>
+    </header>
+    <!-- header Ends -->
 
+    <!-- Main starts -->
+    <main class="lg:w-[1140px] md:w-full sm:w-full lg:py-8 md:py-6  px-2 my-0 mx-auto md:px-6 lg:mt-10">
         <!-- Donate sections starts -->
         <section id="donate_list" class="grid grid-cols-1 gap-8">
             <!-- box-1 -->
@@ -249,11 +250,17 @@
             document.getElementById('success_modal').close();
             document.getElementById('failed-modal').close();
         }
-
         // Time date
         const date = new Date();
         const formattedDate = `Date : ${date.toString()}`;
         // console.log(formattedDate);
+
+
+        // redirecting to blog page
+        document.getElementById('btn-blog').addEventListener('click', function(){
+            window.location.href = './blog.html';
+        })
+        
     </script>
 
 
