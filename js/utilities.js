@@ -9,3 +9,4 @@ function getTextValueByID(id){
     const textNumber = parseFloat(text)
     return textNumber;
 }
+

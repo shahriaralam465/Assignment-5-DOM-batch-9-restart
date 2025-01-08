@@ -26,4 +26,4 @@ document.getElementById('btn-feni').addEventListener('click', function (event) {
         document.getElementById('main-balance').innerText = reduceBalance;
         console.log('Feni : successfully Donate money')
     }
-})
+});
