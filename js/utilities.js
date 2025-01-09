@@ -27,7 +27,7 @@ document.getElementById('show-donate-list').addEventListener('click', function()
 
     document.getElementById('show-transaction-list').classList.add('bg-white');
     document.getElementById('show-transaction-list').classList.remove('bg-[#B4F461]');
-})
+});
 
 document.getElementById('show-transaction-list').addEventListener('click', function(){
     this.classList.add('bg-[#B4F461]');
@@ -35,19 +35,6 @@ document.getElementById('show-transaction-list').addEventListener('click', funct
 
     document.getElementById('show-donate-list').classList.add('bg-white');
     document.getElementById('show-donate-list').classList.remove('bg-[#B4F461]');
-})
-
-
-
-// function changeColorToLime(){
-//     document.getElementById('show-donate-list').classList.add('bg-[#B4F461]');
-//     document.getElementById('show-transaction-list').classList.remove('bg-[#B4F461]');
-// }
-
-// function changeColorToWhite(){
-//     document.getElementById('show-donate-list').classList.add('bg-[#B4F461]');
-//     document.getElementById('show-transaction-list').classList.add('bg-[#B4F461]');
-// }
-
+});
 
 

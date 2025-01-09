@@ -22,7 +22,8 @@
 
 <body class="font h-full">
     <!-- header starts -->
-    <header class="sticky top-0 grid grid-cols-1 gap-2 lg:gap-5 bg-[#fdd83520] px-2 py-2 lg:px-0 lg:py-0  md:px-6  backdrop-blur-lg border-b border-gray-400">
+    <header
+        class="sticky top-0 grid grid-cols-1 gap-2 lg:gap-5 bg-[#fdd83520] px-2 py-2 lg:px-0 lg:py-0  md:px-6  backdrop-blur-lg border-b border-gray-400">
 
         <div class="lg:w-[1140px] md:w-full w-full flex flex-row items-center justify-between my-0 mx-auto lg:py-5 ">
             <!-- Blog Page link -->
@@ -96,38 +97,6 @@
                                 <button id="btn-noakhali"
                                     class="btn btn-neutral text-base lg:text-xl md:text-lg font-semibold text-black lg:h-14 button border-none rounded-lg">Donate
                                 </button>
-
-                                <!-- Success Modal -->
-                                <dialog id="success_modal" class="modal modal-bottom sm:modal-middle">
-                                    <div class="modal-box grid grid-cols-1 place-items-center gap-3">
-                                        <img class="w-12" src="./assets/coin.png" alt="">
-                                        <h3 class="text-3xl font-bold text-center text-black">Congrats!</h3>
-                                        <p class="py-4 font-light text-center text-base text-gray-500">Thank You! Your
-                                            donation has been successfully processed.</p>
-                                        <div class="modal-action">
-                                            <!-- বাটনের টাইপ 'button' করা হয়েছে, যাতে এটি ফর্ম সাবমিট না করে -->
-                                            <button class="btn" type="button" onclick="closeModal()">Close
-                                                Confirmation</button>
-                                        </div>
-                                    </div>
-                                </dialog>
-
-                                <!-- Failed Modal -->
-                                <dialog id="failed-modal" class="modal modal-bottom sm:modal-middle">
-                                    <div class="modal-box grid grid-cols-1 place-items-center gap-3">
-                                        <img class="w-12" src="./assets/coin.png" alt="">
-                                        <h3 class="text-3xl font-bold text-center text-black">Failed!</h3>
-                                        <p class="py-4 font-light text-center text-base text-gray-500">We're so sorry,
-                                            but your
-                                            recent donation attempt was unsuccessful. Please double-check your payment
-                                            information and try again.</p>
-                                        <div class="modal-action">
-                                            <!-- if there is a button in form, it will close the modal -->
-                                            <button class="btn" type="button" onclick="closeModal()">Close</button>
-                                        </div>
-                                    </div>
-                                </dialog>
-
                             </div>
                         </form>
                     </div>
@@ -225,6 +194,41 @@
                 </div>
             </div>
 
+
+            <!-- Modals starts -->
+
+            <!-- Success Modal -->
+            <dialog id="success_modal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box grid grid-cols-1 place-items-center gap-3">
+                    <img class="w-12" src="./assets/coin.png" alt="">
+                    <h3 class="text-3xl font-bold text-center text-black">Congrats!</h3>
+                    <p class="py-4 font-light text-center text-base text-gray-500">Thank You! Your
+                        donation has been successfully processed.</p>
+                    <div class="modal-action">
+                        <!-- btn type button: because it's reloads the browser -->
+                        <button class="btn" type="button" onclick="closeModal()">Close
+                            Confirmation</button>
+                    </div>
+                </div>
+            </dialog>
+
+            <!-- Failed Modal -->
+            <dialog id="failed-modal" class="modal modal-bottom sm:modal-middle">
+                <div class="modal-box grid grid-cols-1 place-items-center gap-3">
+                    <img class="w-12" src="./assets/coin.png" alt="">
+                    <h3 class="text-3xl font-bold text-center text-black">Failed!</h3>
+                    <p class="py-4 font-light text-center text-base text-gray-500">We're so sorry,
+                        but your
+                        recent donation attempt was unsuccessful. Please double-check your payment
+                        information and try again.</p>
+                    <div class="modal-action">
+                        <!-- btn type button: because it's reloads the browser -->
+                        <button class="btn" type="button" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </dialog>
+
+            <!-- Modals Ends -->
         </section>
         <!-- Donate sections ends -->
 
@@ -258,10 +262,10 @@
 
 
         // redirecting to blog page
-        document.getElementById('btn-blog').addEventListener('click', function(){
+        document.getElementById('btn-blog').addEventListener('click', function () {
             window.location.href = './blog.html';
         })
-        
+
     </script>
 
 
